@@ -1,0 +1,79 @@
+<html>
+    <head> <title> Arrays</title></head>
+    <body>
+        <p> How To Declare The Arrays?
+            <h4 id="declaration">
+
+        </h4></p>
+<hr>
+<p> How To Fetch First Element Of Array?
+    <h4 id="access_first_element"></h4>
+</p> <hr>
+<p> How To Fetch Second Element Of Array?
+    <h4 id="access_second_element"></h4>
+</p> <hr>
+<p> How To Fetch Third Element Of Array?
+    <h4 id="access_third_element"></h4>
+</p> <hr>
+<p> How To Get Length Of Array?
+    <h4 id="length"></h4>
+</p> <hr>
+<p>How to loop the array?
+<h4 id="loop"></h4>
+</p> <hr>
+<p>How to add an element at the end of array?<h4 id="add_element"></h4>
+</p>
+<hr>
+<p>How to declare the array with the alphabet?<h4 id="array_alphabet_add"></h4></p><hr>
+<p>How to sort alphabet?<h4 id="sort_alphabet"></h4></p><hr>
+<p>How to reverse alphabet?<h4 id="reverse_alphabet"></h4></p><hr>
+
+        <script>
+var fruits=["apple" ,"banana", "mango"];
+console.log(fruits);
+document.getElementById("declaration").innerHTML=fruits;
+
+var first_fruit=fruits[0];
+console.log(first_fruit);
+document.getElementById("access_first_element").innerHTML=first_fruit;
+
+var second_fruit=fruits[1];
+console.log(second_fruit);
+document.getElementById("access_second_element").innerHTML=second_fruit;
+
+var third_fruit=fruits[2];
+console.log(third_fruit);
+document.getElementById("access_third_element").innerHTML=third_fruit;
+
+var length_of_array=fruits.length;
+console.log(length_of_array);
+document.getElementById("length").innerHTML=length_of_array;
+
+
+var loop_array= " ";
+for (i=0; i < fruits.length;i++)
+
+{
+    console.log(fruits[i]);
+    loop_array=loop_array+fruits[i]+"<br>";
+}
+document.getElementById("loop").innerHTML=loop_array;
+
+fruits.push("lemon");
+console.log(fruits);
+document.getElementById("add_element").innerHTML=fruits;
+
+var alphabet=["c","w","p","s","h","n","m"];
+console.log(alphabet);
+document.getElementById("array_alphabet_add").innerHTML=alphabet;
+
+alphabet.sort();
+console.log(alphabet);
+document.getElementById("sort_alphabet").innerHTML=alphabet;
+
+alphabet.reverse();
+console.log(alphabet);
+document.getElementById("reverse_alphabet").innerHTML=alphabet;
+        </script>
+    </body>
+</html>
